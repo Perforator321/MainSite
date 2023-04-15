@@ -6,7 +6,7 @@
   }
   input:checked~*{
     --color1:white;
-    --color2:black;
+    --color2:rgb(29, 29, 29);
     --kartinka:url(images/sun.png);
   }
   body>input{
@@ -22,10 +22,6 @@
     height: 50px;
     margin: 1%;
   }
-.light-dark{
-  position: fixed;
-  z-index: 1;
-}
   body{
     margin: 0;
     background-image: url(images/tile_background.png);
@@ -34,13 +30,16 @@
     background-attachment: fixed;
     font-size: 25px;
   }
+  main{
+    padding: 0;
+  }
   header{
     background-position: center center;
     background-image: url(images/maineheader.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 1px 0 0 0;
+    padding: 1px 0 1px 0;
   }
   header>h1{
     font-family: Andale Mono, monospace;
@@ -49,13 +48,16 @@
     padding: 30% 3% 0;
     text-shadow: 0 15px 30px black, 0 -15px 30px blue;
   }
-  header>nav{
+  main>nav{
     font-family: Andale Mono, monospace;
     background-color: black;
     margin: 0;
     padding: 10px 30px;
     display: flex;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
+    flex-wrap: wrap;
   }
   nav>a{
     text-decoration:none;
@@ -63,6 +65,9 @@
     margin: 20px;
   }
   nav>a:hover{
+    color: red;
+  }
+  nav>a:active{
     color: red;
   }
   .block{
@@ -127,6 +132,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 1);
+    padding: 0 0 1px 0;
   }
   footer>p{
     font-family: Andale Mono, monospace;
@@ -140,17 +146,15 @@
     .block{
         margin: 5%;
     }
-    header>nav{
-        flex-wrap: wrap;
-    }
+}
+.light-dark{
+  position: fixed;
+  z-index: 1;
 }
 
   @media (max-width: 767px) {
     .block {
         margin: 0;
         border-radius: 0;
-    }
-    header>nav{
-        flex-wrap: wrap;
     }
 }
