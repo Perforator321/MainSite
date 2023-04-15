@@ -8,42 +8,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
 </head>
 <body>
-    <input type="checkbox" id="change">
-    <header>
-        <label for="change" class="light-dark"></label>
-        <h1>История создания игры</h1>
-        <nav class="menu ">
-            <a href="index.html">CaveGame</a>
-            <a href="index2.html">Minecraft<small>OrderOfTheStone</small></a>
-            <a href="index3.html">Minecraft</a>
-            <a href="index4.html">Classic</a>
-        </nav>
-    </header>
-    <main>
-        <article class="block">
-            <h1 id="CG" class="CaveGame">Cave Game</h1>
-            <h2>10 мая 2009</h2>
-            <p>Всё ещё мало кому известный программист <b>Маркус Персон</b> публекует 
-            свою очередную разработку - Cave Game.</p>
-            <p>В той версии игры карта была размером 256x256 блоков и состояла из 
-            булыжника и травы, в глубинах мира можно найти пещеры. Уже есть простая механика света и чанки.</p>
-            <img class="blockimg" src="images/CaveGame.png" alt="Cave Game">
-            <p><b>13 мая</b> выходит первое обновление - <b>rd-132211</b></p>
-            <ul>
-                <li>Игра стала более стабильной</li>
-                <li>Добавлены установка и разрушение блоков</li>
-                <li>Генератор мира стал более гладким и менее случайным</li>
-           </ul>
-           <div></div>
-           <p>Спустя час выходит ещё одно обновление - <b>rd-132328</b></p>
-           <p>Главным нововведением стал человек - первый моб в игре. Он спавнился после генерации 
-           мира и рандомно бегал по карте с очень странной анимацией движения. Так же при нажатии 
-           R игрок перемещался в случайную точку. </p>
-           <img class="blockimg" src="images/Human_Mob.png" alt="Человек">
-        </article>
-    </main>
-    <footer>
-        <p>@Minecraft</p>
-    </footer>
+    <article class="block">
+     <form action="Areg.html">
+        <div>
+          <h1>Регистрация</h1>
+          <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+          <hr>
+            <label for="email"><b>Эл.почта</b></label>
+            <input type="text" placeholder="Введите эл.почту" name="email" required>
+        <div></div>
+            <label for="psw"><b>Пароль</b></label>
+            <input type="password" placeholder="Введите пароль" name="psw" required>
+        <hr>
+      
+          <button type="submit">Зарегистрироваться</button>
+        </div>
+      
+      </form>
+    </article>
 </body>
 </html>
